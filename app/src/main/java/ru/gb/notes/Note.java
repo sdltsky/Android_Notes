@@ -2,13 +2,14 @@ package ru.gb.notes;
 
 public class Note {
 
+
     private int id;
     private String headline;
     private String noteDetails;
-    private long date;
+    private String date;
 
 
-    public Note(int id, String headline, String noteDetails, long date) {
+    public Note(int id, String headline, String noteDetails, String date) {
         this.id = id;
         this.headline = headline;
         this.noteDetails = noteDetails;
@@ -22,7 +23,6 @@ public class Note {
     public void setId(int id) {
         this.id = id;
     }
-
 
     public String getHeadline() {
         return headline;
@@ -40,11 +40,11 @@ public class Note {
         this.noteDetails = noteDetails;
     }
 
-    public long getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(long date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
